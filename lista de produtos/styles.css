@@ -1,0 +1,32 @@
+body {
+    background-color: moccasin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(85, 23, 23);
+}
+
+img {
+    width:256px;
+    height:auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-eve;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid;
+  border-color: whitesmoke;
+  background-color: brown;
+  padding: 0 30px;
+  border-radius: 25px;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 0;
+  color: whitesmoke
+}
+
