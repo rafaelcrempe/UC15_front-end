@@ -3,93 +3,102 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+     <>
+      <h1>Café do Rafa</h1>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <h2>Produtos</h2>
+      <hr />
+
+      <section>
+        <h3>Cafés: </h3>
+        <ul className="produtos">
+          <li className={styles.card}>
+            <p>Café Espresso</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAq83mKxX81nHDhMixnJMKwLSQ729W63lPOQ&s"
+              alt="" />
+            <p>Preço: R$ 2,50</p>
+          </li>
+
+          <li className={styles.card}>
+            <p>Café com Leite (Latte)</p>
+            <img src="https://dfrnt.coffee/cdn/shop/articles/descubre-como-preparar-un-latte-de-vainilla-perfecto-en-casa-738665.png?v=1733918359"
+              alt="" />
+            <p>Preço: R$ 4,50</p>
+          </li>
+
+          <li className={styles.card}>
+            <p>Cappuccino</p>
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/PHNKWQJDLFOOPG2EX7XQYZL6KE.jpg"
+              alt="" />
+            <p>Preço: R$ 6,00</p>
+          </li>
+
+          <li className={styles.card}>
+            <p>Iced Coffee</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrumz0WZEwrjSWnv4I5QuiE9cech5aRr29sw&s"
+              alt="" />
+            <p>Preço: R$ 6,00</p>
+          </li>
+        </ul>
+      </section>
+
+      <hr/>
+
+        <section>
+          <h3>Bolos:</h3>
+          <ul className="produtos">
+
+            <li className={styles.card}>
+              <p>Bolo de Cenoura</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS024_X-Fe8mRuj7OLS-Ma43cOIhLpUdbvI_g&s"
+                alt="" />
+              <p>Preço: R$ 3,50 (fatia 250g)</p>
+            </li>
+
+            <li className={styles.card}>
+              <p>Bolo de Laranja</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJIB82LB8WyF5MzkrxVUhK_xMrc4EGfQUzQ&s"
+                alt="" />
+              <p>Preço: R$ 3,50 (fatia 250g)</p>
+            </li>
+
+            <li className={styles.card}>
+              <p>Bolo de Chocolate</p>
+              <img src="https://pt.petitchef.com/imgupl/recipe/bolo-de-chocolate-humido-e-fofinho--lg-454177p704082.webp"
+                alt="" />
+              <p>Preço: R$ 4,50 (fatia 250g)</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr/>
+
+          <section>
+            <h3>Salgados</h3>
+            <ul className="produtos">
+              <li className={styles.card}>
+                <p>Pão de Queijo</p>
+                <img src="https://static.itdg.com.br/images/1200-675/dfc5a3f918dc30f32747b44cd3a18712/pao-de-queijo-facil-e-delicioso-3-.jpg"
+                  alt="" />
+                <p>Preço: R$ 4,50</p>
+              </li>
+
+              <li className={styles.card}>
+                <p>Croissant</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU2B0lgeZJV_L50_2ihdecmmotRgNXWA1Tg&s"
+                  alt="" />
+                <p>Preço: R$ 6,50</p>
+              </li>
+
+              <li className={styles.card}>
+                <p>Torta de Frango</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOmd1DL0WrlUN2Z7Ty3dSilrX2HLtgS8EPA&s"
+                  alt="" />
+                <p>Preço: R$ 2,50</p>
+              </li>
+            </ul>
+
+          </section>
+        </>
+        );
 }
