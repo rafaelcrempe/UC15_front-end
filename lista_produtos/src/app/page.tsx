@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   return (
@@ -12,12 +13,17 @@ export default function Home() {
       <section>
         <h3>Cafés: </h3>
         <ul className="produtos">
-          <li className={styles.card}>
+          {/* <li className={styles.card}>
             <p>Café Espresso</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAq83mKxX81nHDhMixnJMKwLSQ729W63lPOQ&s"
               alt="" />
             <p>Preço: R$ 2,50</p>
-          </li>
+          </li> */}
+
+            <ProductCard 
+            productName="Café Espresso"
+            price="3,50"
+            imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAq83mKxX81nHDhMixnJMKwLSQ729W63lPOQ&s"/>
 
           <li className={styles.card}>
             <p>Café com Leite (Latte)</p>
