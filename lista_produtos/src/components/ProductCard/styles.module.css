@@ -12,3 +12,8 @@
   margin-left: 0;
   color: whitesmoke
 }
+
+.card img {
+    width:256px;
+    height:auto;
+}

@@ -25,12 +25,11 @@ export default function Home() {
             price="3,50"
             imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAq83mKxX81nHDhMixnJMKwLSQ729W63lPOQ&s"/>
 
-          <li className={styles.card}>
-            <p>Café com Leite (Latte)</p>
-            <img src="https://dfrnt.coffee/cdn/shop/articles/descubre-como-preparar-un-latte-de-vainilla-perfecto-en-casa-738665.png?v=1733918359"
-              alt="" />
-            <p>Preço: R$ 4,50</p>
-          </li>
+          <ProductCard 
+            productName="Café com Leite (Latte)"
+            price="4,50"
+            imgSrc="https://dfrnt.coffee/cdn/shop/articles/descubre-como-preparar-un-latte-de-vainilla-perfecto-en-casa-738665.png?v=1733918359"
+          />
 
           <li className={styles.card}>
             <p>Cappuccino</p>
